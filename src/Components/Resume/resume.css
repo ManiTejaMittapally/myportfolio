@@ -1,0 +1,295 @@
+.title1 {
+    font-size: 2rem;
+    font-weight: 400;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.listHeading {
+    display: flex; /* Make the list items align in a row */
+    justify-content: space-around; /* Add space between items */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+}
+
+
+
+.eduHeading {
+    font-size: 3vw;
+    padding: 1rem 1rem;
+    margin-left: 5rem;
+    
+}
+
+
+.card {
+    width: 70%; /* Set width of the card */
+    height: 450px; /* Set height of the card */
+    margin-left: 1rem; /* Add margin to the left */
+    margin-top: 2rem;
+    border-left: 6px solid black; /* Left border */
+    margin-left: 1rem;
+    opacity: 1; /* Set opacity if needed, valid values are from 0 to 1 */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Stack child elements vertically */
+    align-items: center;
+    gap: 20px; /* Set gap between flex items */
+    position: relative; /* Set positioning context for children */
+}
+
+@media screen and (max-width: 1100px) {
+    .card {
+        height: 310px;
+    }
+    
+}
+
+@media screen and (max-width: 360px) {
+    .resumeCard {
+        overflow: auto;
+    }
+    .card{
+        border-left: none;
+    }
+    
+}
+@media screen and (max-width: 650px) {
+    .card {
+        height: 300px;
+    }
+    .eduHeading{
+        margin-left: 10rem;
+    }
+}
+
+.resumeCard {
+    width: calc(100% - 30px); /* Full width minus the width of the line */
+    max-height: 400px;
+    overflow-y: visible;
+    position: relative; /* Position relative for the card */
+    padding: 1rem 1rem; /* Add padding for the content */
+    padding-bottom: 1rem;
+    border-radius: 0.5rem; /* Round corners */
+    margin-left: 30px; /* Align with the right end of the line */
+    background-color: rgb(50, 50, 50);
+   
+}
+
+@media screen and (min-width: 1100px) {
+    .resumeCard {
+        margin-bottom: 3rem; /* Increase margin for larger screens */
+    }
+}
+
+.line {
+    width: 30px; /* Width of the line */
+    height: 6px; /* Height of the line */
+    background-color: black; /* Background color */
+    margin-top: 1rem; /* Margin from the top */
+    position: absolute; /* Absolute positioning */
+    left: -30px; /* Align with the left border of the card */
+    top: 30%; /* Adjust position vertically in the card */
+    transform: translateY(-50%); /* Adjust to center vertically */
+    
+}
+
+.insideCircle {
+    position: absolute; /* Position it relative to the card */
+    width: 12px; /* Size for the white circle */
+    height: 12px;
+    border-radius: 50%; /* Make it a circle */
+    background-color: white; /* White color for the circle */
+    top: 45%; /* Position it vertically at the center */
+    left: -3px; /* Center it horizontally on the line */
+    transform: translate(-50%, -50%); /* Adjust position to intersect the line */
+    transition: background-color 300ms; /* Smooth transition on hover */
+}
+
+/* Change insideCircle color on hover */
+.resumeCard:hover .insideCircle {
+    background-color: #ff6347; /* Change color on hover */
+    border: yellow;
+}
+
+.content {
+    padding: 1rem; /* Add some padding for the content */
+    color: #333; /* Set a default text color */
+}
+
+.header {
+    font-size: 1.5vw ;  
+}
+.subt {
+    font-size: 1vw;
+}
+.des {
+    font-size: 1vw;
+    padding-top: 1rem;
+    font-weight: 200;
+
+}
+
+.address{
+    font-size: 1vw
+}
+
+.date {
+    font-size: 1vw;
+    position: absolute;
+    top: 40px;
+    right: 20px;
+}
+.result {
+    font-size: small;
+    background-color: black; /* Red background */
+    color: white; /* White text */
+    padding: 0.25rem 0.25rem; /* Padding inside the box */
+    border-radius: 0.25rem; /* Slightly rounded corners */
+    font-weight: bold; /* Bold text */
+    position: absolute; /* Absolute positioning */
+    top: 30px; /* Position near the top */
+    right: 30px; /* Position near the right */
+}
+
+/* Define default styles for resumeLi */
+.resumeLi {
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background-color: rgb(50, 50, 50);
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: 2px solid transparent; /* Default border */
+}
+
+/* Define active styles when the section is selected */
+.resumeLi.active {
+    border-color: pink; /* Replace 'deignColor' with the actual color */
+    border-radius: 0.5rem;
+}
+/* Skill container */
+.skillContainer {
+    margin-top: 2rem;
+  }
+  
+  /* Title for each skill */
+  .skillTitle {
+    font-size: 2vw;
+    margin-bottom: 0.5rem;
+  }
+
+  .skillContainer {
+    margin: 20px 0;
+  }
+  
+  .skillHeader {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  
+  .skillName {
+    font-size: 1.2rem;
+    margin-left: 10rem;
+  }
+  
+  .skillPercentage {
+    font-size: 1rem;
+    color: #777;
+    position: absolute; /* Position it absolutely */
+   right: 0; /* Align to the right of the progress bar */
+  top: 0; /* Align to the top */
+  padding-right: 10px; /* Add a bit of padding for spacing */
+  height: 100%; /* Make sure it aligns vertically */
+  display: flex;
+  align-items: center; /* Vertically center the percentage text */
+    
+  }
+  
+  .progressBar {
+    position: relative;
+    width: 50%;
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 20px;
+    margin-left: 10rem;
+  }
+  
+  .filledBar {
+    height: 100%;
+    background-color: #ff6347; /* You can change this to any color */
+    transition: width 0.5s ease;
+    border-radius: 5px;
+  }
+  /* @media screen and (max-width:380px) {
+    .resumeCard{
+        height: 250px;
+        overflow: auto;
+
+    }
+   
+} */
+
+
+  @media screen and (max-width:480px) {
+    .listHeading{
+        font-size: small;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listHeading li {
+        margin-bottom: 0.5rem; /* Optional: Add bottom margin for extra spacing */
+        
+    }
+
+    .card{
+        margin-left: -4rem;
+    }
+        
+  }
+
+  @media screen and (max-width:900px) {
+    .result{
+        position: absolute;
+        top: 30px;
+        right: 15px;
+        font-size: 0.5rem;
+        background-color: rgba(0, 0, 0, 0.7); /* Less intense black color with transparency */
+        padding: 0.1rem 0.2rem; /* Reduced padding */
+        display: inline-block; /* Ensure the box only wraps the content */
+    white-space: nowrap; /* Prevent the text from wrapping to a new line */
+    width: fit-content; /* Make the box only as wide as the content */
+    height: auto; /* Adjust height based on content */
+    border-radius: 0.15rem; /* Slightly smaller rounded corners */
+    }
+}
+
+@media screen and (max-width:520px) {
+    .result{
+        position: absolute;
+        top: 50px;
+        right: 7px;
+        font-size: 0.3rem;
+        background-color: rgba(0, 0, 0, 0.7); /* Less intense black color with transparency */
+    padding: 0.1rem 0.1rem; /* Reduced padding */
+    display: inline-block; /* Ensure the box only wraps the content */
+    white-space: nowrap; /* Prevent the text from wrapping to a new line */
+    width: fit-content; /* Make the box only as wide as the content */
+    height: auto; /* Adjust height based on content */
+    border-radius: 0.15rem; /* Slightly smaller rounded corners */
+    }
+} 
+
+
+  
+  
+
