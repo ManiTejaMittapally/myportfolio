@@ -8,7 +8,7 @@ export const Skills = () => {
   return (
     <section id='skills'>
         <span className='skillTitle1'>What I do</span>
-        <span className='skillDesc'>I am a full-stack Java developer with 2+ years of experience building dynamic front-end interfaces using React, JavaScript, and responsive design principles. On the back-end, I specialize in Java and Spring Boot for creating scalable APIs and managing data with MySQL, PostgreSQL, and MongoDB. I ensure seamless integration between the front-end and back-end, delivering high-quality, full-stack applications.</span>
+        <span className='skillDesc'>I am a full-stack Java developer with around 3 years of experience building dynamic front-end interfaces using React, JavaScript, and responsive design principles. On the back-end, I specialize in Java and Spring Boot for creating scalable APIs and managing data with MySQL, PostgreSQL, and MongoDB. I ensure seamless integration between the front-end and back-end, delivering high-quality, full-stack applications.</span>
         <div className='skillBars'>
             <div className='skillBar'>
                 <img src={UIDesign} alt='UIDesign' className='skillBarImg'></img>

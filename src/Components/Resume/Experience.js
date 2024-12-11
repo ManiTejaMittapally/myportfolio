@@ -19,7 +19,7 @@ export const Experience = () => {
             <ExpeCard
                 title="Java Developer"
                 subTitle="Congruex Asia Pacific LLC"
-                date=" (Jun 2021-July 2022)"
+                date=" (Jun 2020-July 2022)"
                 address="Punjab,India"
                 des="Worked as a Java Developer, contributing to the design and development of robust applications using Java, Spring, and Hibernate frameworks. Gained hands-on experience in database management with MySQL and implemented RESTful services for efficient data handling. Involved in debugging and performance tuning of applications, resulting in improved response times and user satisfaction."
             />

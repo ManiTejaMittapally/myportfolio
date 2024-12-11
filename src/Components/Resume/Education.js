@@ -18,7 +18,7 @@ export const Education = () => {
             />
             <ResumeCard
                 title="Electronics and Communication Engineering"
-                subTitle="Guru Nanak Institute of Technology (2017- 2021)"
+                subTitle="Guru Nanak Institute of Technology (2016- 2020)"
                 result="7.4/10"
                 des="Developed a strong foundation in Java, C++, and Python with practical experience in agile web development. Worked closely with diverse teams to solve complex problems and deliver impactful solutions. Acquired hands-on knowledge in database management and applied it to real-world scenarios, while staying updated on industry trends to adapt to new technologies and enhance project contributions."
             />
