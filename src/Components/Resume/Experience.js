@@ -11,17 +11,17 @@ export const Experience = () => {
           
             <ExpeCard
                 title="Java Full Stack Developer"
-                subTitle="Elite Exceed"
-                date="(Jan 2024-Present)"
-                address = "Irving,TX"
-                des="Currently serving as a Java Full Stack Developer, focusing on building scalable web applications using Java and Spring Boot for backend development and React for the frontend. Engaged in the complete software development lifecycle, from requirements gathering to deployment. Collaborate closely with cross-functional teams to implement microservices architecture on AWS, ensuring high availability and performance. Utilize RESTful APIs for seamless integration with databases, while actively participating in code reviews to uphold coding standards and best practices for robust and efficient applications."
+                subTitle="Citi Group"
+                date="(Feb 2024-Present)"
+                address = "USA"
+                des="Currently working on developing a scalable Banking Transaction Management System using Java, Spring Boot, and React to enable real-time financial transaction tracking and reporting. Designing and optimizing RESTful APIs to improve system responsiveness and performance. Implementing a microservices architecture with Docker and Kubernetes on AWS for enhanced scalability and high availability. Automating ETL processes using AWS Lambda to streamline data ingestion. Building CI/CD pipelines with Jenkins to ensure faster and reliable deployments while conducting performance optimization using Grafana and JMeter to handle high transaction volumes effectively."
             />
             <ExpeCard
-                title="Java Developer"
-                subTitle="Congruex Asia Pacific LLC"
-                date=" (Jun 2020-July 2022)"
-                address="Punjab,India"
-                des="Worked as a Java Developer, contributing to the design and development of robust applications using Java, Spring, and Hibernate frameworks. Gained hands-on experience in database management with MySQL and implemented RESTful services for efficient data handling. Involved in debugging and performance tuning of applications, resulting in improved response times and user satisfaction."
+                title="Full Stack Developer"
+                subTitle="Philips Healthcare"
+                date=" (Aug 2020-July 2022)"
+                address="India"
+                des="Worked on developing a Patient Monitoring and Management System (PMMS) using Java, Spring Boot, Hibernate, and React.js to enable real-time patient monitoring and hospital resource management. Designed RESTful APIs, integrated MongoDB for handling large healthcare datasets, and implemented role-based access control for secure data access."
             />
         </div>
     </div>
